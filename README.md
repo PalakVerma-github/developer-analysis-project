@@ -36,3 +36,5 @@ Dataset is not uploaded due to size limitations. It can be downloaded from the o
 - Salary varies across education levels, but skills and experience also matter.
 - Job satisfaction is influenced by more than salary alone.
 - Popular languages also show strong earning potential.
+## Author
+Palak Verma  
