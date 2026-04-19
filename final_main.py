@@ -146,6 +146,8 @@ language_df = language_df.reset_index(drop=True)
 print("\nLanguage dataframe shape:", language_df.shape)
 print("\nTop 10 languages:\n", language_df["LanguageHaveWorkedWith"].value_counts().head(10))
 
+# Visualizing most popular programming languages among developers
+# Helps understand current technology trends in the industry
 # =========================================================
 # PLOT 1: TOP 10 PROGRAMMING LANGUAGES
 # =========================================================
@@ -166,6 +168,8 @@ plt.tight_layout()
 plt.savefig("charts/top_languages.png", dpi=300)
 plt.show()
 
+# Analyzing how salary varies across different experience levels
+# Boxplot helps compare distribution and detect variations
 # =========================================================
 # PLOT 2: SALARY BY EXPERIENCE LEVEL
 # =========================================================
@@ -310,7 +314,8 @@ plt.savefig("charts/median_salary.png", dpi=300)
 plt.show()
 
 
-
+# Final insights and conclusions derived from the analysis
+# Summarizing key findings for better understanding
 # =========================================================
 # PROJECT OBJECTIVES and CONCLUSION
 # =========================================================
