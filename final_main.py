@@ -69,7 +69,9 @@ print("\nShape after selecting columns:", df.shape)
 # -------------------------------
 # DATA CLEANING
 # -------------------------------
-
+# Converting important columns into numeric format for analysis
+# Removing missing salary values and filtering extreme outliers
+# Filling missing categorical and numeric values for cleaner analysis
 # Convert numeric columns safely
 df["ConvertedCompYearly"] = pd.to_numeric(df["ConvertedCompYearly"], errors="coerce")
 df["WorkExp"] = pd.to_numeric(df["WorkExp"], errors="coerce")
@@ -93,6 +95,7 @@ df["JobSat"] = df["JobSat"].fillna(df["JobSat"].median())
 df = df.dropna(subset=["LanguageHaveWorkedWith"])
 
 # Remove duplicates
+# Duplicate rows are removed to improve data quality
 df = df.drop_duplicates()
 
 print("\nMissing values after cleaning:\n")
