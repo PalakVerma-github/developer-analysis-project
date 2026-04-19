@@ -119,6 +119,9 @@ df["EdLevel"] = df["EdLevel"].replace({
 # -------------------------------
 # FEATURE ENGINEERING
 # -------------------------------
+# Creating experience groups to categorize developers based on years of experience
+# This helps in better comparison of salary and trends across different levels
+# Dividing developers into Beginner, Junior, Mid-Level, Senior, and Expert categories
 df["ExperienceLevel"] = pd.cut(
     df["WorkExp"],
     bins=[0, 2, 5, 10, 20, 50],
